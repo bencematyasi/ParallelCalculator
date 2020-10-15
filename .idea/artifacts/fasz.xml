@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="fasz">
+    <output-path>$PROJECT_DIR$/out/artifacts/fasz</output-path>
+    <root id="archive" name="fasz.jar" />
+  </artifact>
+</component>
