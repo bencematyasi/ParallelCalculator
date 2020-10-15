@@ -6,7 +6,6 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Main {
-    //TODO:Write better comments
 
     public static final long MAX_NUMBER = 5_000_000_000L;
     private static final long DIVISOR = 3;
@@ -42,8 +41,6 @@ public class Main {
             FutureTask<Long> futureTask = new FutureTask<Long>(new CallableCalculator(first, last, DIVISOR));
             //Add this newly created FutureTask to the task list
             taskList.add(futureTask);
-            //Execute the FutureTask
-            //executor.execute(futureTask);
         }
         /* Execute/start each task, the order of execution does not matter*/
         taskList.parallelStream().forEach(task -> executor.execute(task));
